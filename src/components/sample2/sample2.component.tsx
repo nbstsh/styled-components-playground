@@ -20,7 +20,7 @@ interface IButtonProps {
 // 	border-radius: 3px;
 // `;
 
-const StyledButton = styled.button<IButtonProps>`
+export const StyledButton = styled.button<IButtonProps>`
 	background: ${props => (props.primary ? 'palevioletred' : 'white')};
 	color: ${props => (props.primary ? 'white' : 'palevioletred')};
 
