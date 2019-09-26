@@ -2,7 +2,12 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const Button = styled.button`
+interface IButton {
+	as?: string;
+	href?: string;
+}
+
+const Button = styled.button<IButton>`
 	display: inline-block;
 	color: palevioletred;
 	font-size: 1em;
