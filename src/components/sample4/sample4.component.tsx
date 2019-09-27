@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface IButton {
-	as?: string;
+	as?: string | React.FC;
 	href?: string;
 }
 
@@ -23,6 +23,17 @@ const TomatoButton = styled(Button)`
 	border-color: tomato;
 `;
 
+const ReversedButton: React.FC = props => {
+	const { children } = props;
+
+	return (
+		<Button
+			{...props}
+			children={typeof children === 'string' && children.split('').reverse()}
+		/>
+	);
+};
+
 const Sample4 = () => {
 	return (
 		<div>
@@ -33,6 +44,7 @@ const Sample4 = () => {
 			<TomatoButton as='a' href='/'>
 				Link with Tomato Button styles
 			</TomatoButton>
+			<Button as={ReversedButton}>CustomButton as reversed button</Button>
 		</div>
 	);
 };
