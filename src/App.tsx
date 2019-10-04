@@ -10,6 +10,7 @@ import Sample5 from './components/sample5/sample5.component';
 import Sample6 from './components/sample6/sample6.component';
 import Sample7 from './components/sample7/sample7.component';
 import Sample8 from './components/Sample8/sample8.component';
+import Sample9 from './components/sample9/sample9.component';
 
 const Wrapper = styled.div`
 	min-width: 100vw;
@@ -31,6 +32,7 @@ const App: React.FC = () => {
 			<Sample6 />
 			<Sample7 />
 			<Sample8 />
+			<Sample9 />
 		</Wrapper>
 	);
 };
