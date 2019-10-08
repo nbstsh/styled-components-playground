@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Theming from '../theming/theming.component';
 
 const Wrapper = styled.div`
 	min-width: 100vw;
@@ -11,7 +12,11 @@ const Wrapper = styled.div`
 	flex-direction: column;
 `;
 const Advanced = () => {
-	return <Wrapper></Wrapper>;
+	return (
+		<Wrapper>
+			<Theming />
+		</Wrapper>
+	);
 };
 
 export default Advanced;
