@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Theming from '../theming/theming.component';
 import FunctionTheming from '../function-theming/function-theming.component';
+import GetTheme from '../get-theme/get-theme.component';
 
 const Wrapper = styled.div`
 	min-width: 100vw;
@@ -17,6 +18,7 @@ const Advanced = () => {
 		<Wrapper>
 			<Theming />
 			<FunctionTheming />
+			<GetTheme />
 		</Wrapper>
 	);
 };
