@@ -4,6 +4,7 @@ import Theming from '../theming/theming.component';
 import FunctionTheming from '../function-theming/function-theming.component';
 import GetTheme from '../get-theme/get-theme.component';
 import ThemeProps from '../theme-props/theme-props.component';
+import Refs from '../refs/refs.component';
 
 const Wrapper = styled.div`
 	min-width: 100vw;
@@ -21,6 +22,7 @@ const Advanced = () => {
 			<FunctionTheming />
 			<GetTheme />
 			<ThemeProps />
+			<Refs />
 		</Wrapper>
 	);
 };
