@@ -6,6 +6,7 @@ import GetTheme from '../get-theme/get-theme.component';
 import ThemeProps from '../theme-props/theme-props.component';
 import Refs from '../refs/refs.component';
 import ComponentInSelector from '../component-in-selector/component-in-selector.component';
+import StyleObjects from '../style-objects/style-objects.component';
 
 const Wrapper = styled.div`
 	min-width: 100vw;
@@ -25,6 +26,7 @@ const Advanced = () => {
 			<ThemeProps />
 			<Refs />
 			<ComponentInSelector />
+			<StyleObjects />
 		</Wrapper>
 	);
 };
